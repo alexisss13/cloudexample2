@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     libpq-dev \
     && docker-php-ext-install pdo pdo_pgsql pgsql
 
-# copiamos el codigo de la aplicacion al contenedor
+# copiamos el codigo de la aplicacion al contenedor 
 COPY . /var/www/html/
 
 # Exponer el puerto 80
